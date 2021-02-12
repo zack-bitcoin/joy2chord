@@ -56,12 +56,12 @@ total_chorded_buttons = 6 # The hardware used may provide more buttons than we u
 
 # to find out button numbers use the jstest utility
 
-chord_b1 = 4
+chord_b1 = 0
 chord_b2 = 6
-chord_b3 = 9
-chord_b4 = 3
+chord_b3 = 2
+chord_b4 = 7
 chord_b5 = 5
-chord_b6 = 7
+chord_b6 = 4
 
 # How many modes do you want to define
 total_modes = 3 # How many modes do you want to define

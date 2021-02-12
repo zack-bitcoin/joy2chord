@@ -925,9 +925,23 @@ void joy2chord::main_loop(map<string,__u16> chordmap)
 
 void joy2chord::process_events(js_event js)
 {
-	switch(js.type & ~JS_EVENT_INIT) 
-	{
-               	case JS_EVENT_BUTTON:
+  switch(js.type & ~JS_EVENT_INIT) 
+    {
+    case JS_EVENT_BUTTON:
+        process_events2(js);
+      break;
+    case JS_EVENT_AXIS:
+      if((js.number == 6)||(js.number == 7)){
+        process_events2(js);
+      }
+      break;
+    }
+}
+void joy2chord::process_events2(js_event js)
+{
+  //	switch(js.type & ~JS_EVENT_INIT) 
+  //	{
+  //               	case JS_EVENT_BUTTON:
 			if (js.value) 
 			// Simple Button Logic
 			{ // if a button is pressed down remember its state until all buttons are released
@@ -1142,8 +1156,8 @@ void joy2chord::process_events(js_event js)
 					send_code[clearl] = 0;
 				}
 			}
-                        break;
-	}
+                        //                        break;
+                        //	}
 }
 
 int main( int argc, char *argv[])

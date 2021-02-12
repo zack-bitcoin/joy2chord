@@ -88,6 +88,7 @@ public:
 	void send_key_down(__u16 key_code);
 	void send_key_up(__u16 key_code);
 	void process_events(js_event js);
+	void process_events2(js_event js);
 	int valid_key(string newkey);
 	void main_loop(map<string, __u16> chordmap);
 	void ioctl_wrapper(int uinp_fd, int UI_SETBIT, int i);
