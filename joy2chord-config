@@ -57,10 +57,10 @@ total_chorded_buttons = 6 # The hardware used may provide more buttons than we u
 # to find out button numbers use the jstest utility
 
 chord_b1 = 0
-chord_b2 = 6
-chord_b3 = 2
+chord_b2 = 2
+chord_b3 = 5
 chord_b4 = 7
-chord_b5 = 5
+chord_b5 = 6
 chord_b6 = 4
 
 # How many modes do you want to define
@@ -98,6 +98,8 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 
 # unused keys should be set to KEY_RESERVED so warnings are not given about undefined values
 
+#
+
 1chord1 = KEY_A
 1chord2 = KEY_B
 1chord3 = KEY_C
@@ -133,34 +135,35 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 1chord33 = KEY_SPACE
 1chord34 = KEY_TAB
 1chord35 = KEY_BACKSPACE
-1chord36 = KEY_RESERVED
-1chord37 = KEY_RESERVED
-1chord38 = KEY_RESERVED 
-1chord39 = KEY_RESERVED
-1chord40 = KEY_ESC
-1chord41 = KEY_PAGEUP
-1chord42 = KEY_PAGEDOWN
-1chord43 = KEY_HOME
-1chord44 = KEY_END
-1chord45 = KEY_INSERT
-1chord46 = KEY_DELETE
+1chord36 = KEY_DELETE
+1chord37 = KEY_COMMA
+1chord38 = KEY_DOT
+1chord39 = KEY_SEMICOLON
+1chord40 = KEY_SLASH
+1chord41 = KEY_BACKSLASH
+1chord42 = KEY_APOSTROPHE
+1chord43 = KEY_LEFTBRACE
+1chord44 = KEY_RIGHTBRACE
+1chord45 = KEY_MINUS
+1chord46 = KEY_EQUAL
 1chord47 = KEY_RESERVED #using for mode two
-1chord48 = KEY_RESERVED
-1chord49 = KEY_RESERVED
+1chord48 = KEY_ESC
+1chord49 = KEY_GRAVE
 1chord50 = KEY_RESERVED
 1chord51 = KEY_RESERVED
-1chord52 = KEY_RESERVED
-1chord53 = KEY_RESERVED
-1chord54 = KEY_RESERVED
-1chord55 = KEY_RESERVED
-1chord56 = KEY_RESERVED
-1chord57 = KEY_RESERVED
-1chord58 = KEY_RESERVED
-1chord59 = KEY_RESERVED
-1chord60 = KEY_RESERVED
-1chord61 = KEY_RESERVED
-1chord62 = KEY_RESERVED
-1chord63 = KEY_RESERVED # using for mode two
+1chord52 = KEY_F9
+1chord53 = KEY_0
+1chord54 = KEY_9
+1chord55 = KEY_8
+1chord56 = KEY_7
+1chord57 = KEY_6
+1chord58 = KEY_5
+1chord59 = KEY_4
+1chord60 = KEY_3
+1chord61 = KEY_2
+1chord62 = KEY_1
+1chord63 = KEY_RESERVED # using for mode three
+
 
 # Mode Two options ( form of 2chord# )
 
@@ -226,7 +229,7 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 2chord60 = KEY_RESERVED
 2chord61 = KEY_RESERVED
 2chord62 = KEY_RESERVED
-2chord63 = KEY_RESERVED # using for mode two
+2chord63 = KEY_RESERVED # using for mode three
 
 # Mode Three options ( form of 3chord# )
 
