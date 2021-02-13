@@ -98,98 +98,70 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 
 # unused keys should be set to KEY_RESERVED so warnings are not given about undefined values
 
-#one button
-#space backspace escape newline shift i
+#
 
-#two button 15
-#xk___l___jh____
-#adefnorstu
-
-#three button 20
-#control alt tab ;'`\,./  mcywgpbvqz  
-#7 11 19 35
-#13 21 37
-#25 41
-#49
-#14 22 38
-#26 42
-#50
-#28 44
-#52
-#56
-
-#four button 15
-#1234567890-=[] reserved
-
-#five button 6
-#delete f9 f10 meta mode1 mode2
-
-#six button 1
-#mode3
-
-
-1chord1 = KEY_SPACE
-1chord2 = KEY_BACKSPACE
-1chord3 = KEY_A
-1chord4 = KEY_ESC
-1chord5 = KEY_K
-1chord6 = KEY_L
-1chord7 = KEY_LEFTCTRL
-1chord8 = KEY_ENTER
-1chord9 = KEY_D
-1chord10 = KEY_N
-1chord11 = KEY_APOSTROPHE
-1chord12 = KEY_J
-1chord13 = KEY_DOT
-1chord14 = KEY_COMMA
-1chord15 = KEY_RIGHTBRACKET
-1chord16 = KEY_LEFTSHIFT
-1chord17 = KEY_E
-1chord18 = KEY_O
-1chord19 = KEY_M
-1chord20 = KEY_H
-1chord21 = KEY_SLASH
-1chord22 = KEY_BACKSLASH
-1chord23 = KEY_EQUAL
-1chord24 = KEY_T
-1chord25 = KEY_RESERVED
-1chord26 = KEY_GRAVE
-1chord27 = KEY_9
-1chord28 = KEY_C
-1chord29 = KEY_6
-1chord30 = KEY_3
+1chord1 = KEY_A
+1chord2 = KEY_B
+1chord3 = KEY_C
+1chord4 = KEY_D
+1chord5 = KEY_E
+1chord6 = KEY_F
+1chord7 = KEY_G
+1chord8 = KEY_H
+1chord9 = KEY_I
+1chord10 = KEY_J
+1chord11 = KEY_K
+1chord12 = KEY_L
+1chord13 = KEY_M
+1chord14 = KEY_N
+1chord15 = KEY_O
+1chord16 = KEY_P
+1chord17 = KEY_Q
+1chord18 = KEY_R
+1chord19 = KEY_S
+1chord20 = KEY_T
+1chord21 = KEY_U
+1chord22 = KEY_V
+1chord23 = KEY_W
+1chord24 = KEY_X
+1chord25 = KEY_Y
+1chord26 = KEY_Z
+1chord27 = KEY_LEFTSHIFT
+1chord28 = KEY_LEFTMETA
+1chord29 = KEY_LEFTCTRL
+1chord30 = KEY_LEFTALT
 1chord31 = KEY_RESERVED # using for mode one
-1chord32 = KEY_I
-1chord33 = KEY_F
-1chord34 = KEY_R
-1chord35 = KEY_TAB
-1chord36 = KEY_S
-1chord37 = KEY_P
-1chord38 = KEY_Q
-1chord39 = KEY_0
-1chord40 = KEY_U
-1chord41 = KEY_B
-1chord42 = KEY_V
-1chord43 = KEY_8
-1chord44 = KEY_W
-1chord45 = KEY_5
-1chord46 = KEY_2
+1chord32 = KEY_ENTER
+1chord33 = KEY_SPACE
+1chord34 = KEY_TAB
+1chord35 = KEY_BACKSPACE
+1chord36 = KEY_DELETE
+1chord37 = KEY_COMMA
+1chord38 = KEY_DOT
+1chord39 = KEY_SEMICOLON
+1chord40 = KEY_SLASH
+1chord41 = KEY_BACKSLASH
+1chord42 = KEY_APOSTROPHE
+1chord43 = KEY_LEFTBRACE
+1chord44 = KEY_RIGHTBRACE
+1chord45 = KEY_MINUS
+1chord46 = KEY_EQUAL
 1chord47 = KEY_RESERVED #using for mode two
-1chord48 = KEY_X
-1chord49 = KEY_Y
-1chord50 = KEY_SEMICOLON
-1chord51 = KEY_7
-1chord52 = KEY_G
-1chord53 = KEY_4
-1chord54 = KEY_1
-1chord55 = KEY_LEFTMETA
-1chord56 = KEY_LEFTALT
-1chord57 = KEY_LEFTBRACKET
-1chord58 = KEY_MINUS
-1chord59 = KEY_F10
-1chord60 = KEY_Z
-1chord61 = KEY_F9
-1chord62 = KEY_DELETE
+1chord48 = KEY_ESC
+1chord49 = KEY_GRAVE
+1chord50 = KEY_RESERVED
+1chord51 = KEY_F10
+1chord52 = KEY_F9
+1chord53 = KEY_0
+1chord54 = KEY_9
+1chord55 = KEY_8
+1chord56 = KEY_7
+1chord57 = KEY_6
+1chord58 = KEY_5
+1chord59 = KEY_4
+1chord60 = KEY_3
+1chord61 = KEY_2
+1chord62 = KEY_1
 1chord63 = KEY_RESERVED # using for mode three
 
 
@@ -228,7 +200,7 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 2chord31 = KEY_RESERVED # using for mode one
 2chord32 = KEY_ENTER
 2chord33 = KEY_SPACE
-2chord34 = KEY_ENTER
+2chord34 = KEY_TAB
 2chord35 = KEY_BACKSPACE
 2chord36 = KEY_RESERVED
 2chord37 = KEY_RESERVED
@@ -262,9 +234,9 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 # Mode Three options ( form of 3chord# )
 
 3chord1 = KEY_UP
-3chord2 = KEY_RIGHT
+3chord2 = KEY_LEFT
 3chord3 = KEY_PAGEUP
-3chord4 = KEY_TAB
+3chord4 = KEY_RIGHT
 3chord5 = KEY_RESERVED
 3chord6 = KEY_RESERVED
 3chord7 = KEY_RESERVED
@@ -276,7 +248,7 @@ total_modifiers = 4 # a modifier is activated until a non modifier is pressed
 3chord13 = KEY_RESERVED
 3chord14 = KEY_RESERVED
 3chord15 = KEY_RESERVED
-3chord16 = KEY_LEFT
+3chord16 = KEY_RESERVED
 3chord17 = KEY_RESERVED
 3chord18 = KEY_RESERVED
 3chord19 = KEY_RESERVED
