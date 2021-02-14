@@ -965,7 +965,7 @@ void joy2chord::process_events2(js_event js)
 					{
 						if (verbose)
 						{
-							//cout << "Sending Down: " << // simple_values[allsimple];
+                                                  cout << "Sending Down: " <<  simple_values[allsimple] << endl;
 						}
 						send_key_down(simple_modes[mode][allsimple]);	
 					}
@@ -1101,7 +1101,8 @@ void joy2chord::process_events2(js_event js)
 					{
 						cout << "Sending Mode[" << mode << "] Down Code: " <<  button_code << endl;
 					}
-					send_key_down(thiskey);	
+					send_key_down(thiskey);
+                                        simple_modes[1][1] = thiskey;
 					lastkey = thiskey;
 				}
 					for (int mbuttons = 1; mbuttons <= total_modifiers; mbuttons++)
