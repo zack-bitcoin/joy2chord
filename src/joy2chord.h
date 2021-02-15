@@ -52,6 +52,7 @@ public:
 	__u16 modifier[MAX_MODIFIERS];
 	int total_modifiers;
 	int modifier_state[MAX_MODIFIERS];
+	int modifier_context[MAX_MODIFIERS];
 	int total_modes;
 	int mode_code[MAX_MODES];
 	int total_macros;

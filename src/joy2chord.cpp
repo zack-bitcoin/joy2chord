@@ -967,7 +967,25 @@ void joy2chord::process_events2(js_event js)
 						{
                                                   cout << "Sending Down: " <<  simple_values[allsimple] << endl;
 						}
-						send_key_down(simple_modes[mode][allsimple]);	
+                                                if((mode == 1) && (allsimple == 1)){
+                                                  for(int i = 1; i <= total_modifiers; i++)
+                                                    {
+                                                      if (1 == modifier_context[i])
+                                                        {
+                                                          send_key_down(modifier[i]);
+                                                        }
+                                                    }
+                                                  send_key_down(simple_modes[mode][allsimple]);
+                                                  for(int i = 1; i <= total_modifiers; i++)
+                                                    {
+                                                      if (1 == modifier_context[i])
+                                                        {
+                                                          send_key_up(modifier[i]);
+                                                        }
+                                                    }
+                                                } else {
+                                                  send_key_down(simple_modes[mode][allsimple]);
+                                                }
 					}
 				}
 			}else{ // track when buttons are released
@@ -1103,9 +1121,13 @@ void joy2chord::process_events2(js_event js)
 					}
 					send_key_down(thiskey);
                                         simple_modes[1][1] = thiskey;
+                                        for(int i = 1; i <= total_modifiers; i++)
+                                          {
+                                            modifier_context[i] = modifier_state[i];
+                                          }
 					lastkey = thiskey;
 				}
-					for (int mbuttons = 1; mbuttons <= total_modifiers; mbuttons++)
+                                for (int mbuttons = 1; mbuttons <= total_modifiers; mbuttons++)
 				{
 					if (thiskey == modifier[mbuttons])
 					{
